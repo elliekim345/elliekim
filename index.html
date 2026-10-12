@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ellie Kim</title>
+<meta name="description" content="Ellie (Hayul) Kim is a high school senior in New Jersey who competes in debate, teaches it to younger students, wrote a county-reviewed voter guide for first-time voters, and wrote a picture book series about seeing the other side.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%235B2A6B'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='28' text-anchor='middle' fill='%23FBF7FD'%3EEK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --plum: #6E3482;
+    --plum-deep: #5B2A6B;
+    --lilac: #F3EDF7;
+    --mist: #FAF7FC;
+    --charcoal: #23222A;
+    --slate: #5C5A68;
+    --line: #E6DEEC;
+    --ink-on-plum: #FBF7FD;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: #fff; color: var(--charcoal); font-family: var(--sans); font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  a { color: var(--plum-deep); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--plum); outline-offset: 3px; }
+  img { max-width: 100%; height: auto; display: block; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+  header.top { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .topin { max-width: 980px; margin: 0 auto; padding: 0 24px; height: 62px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .brand { font-family: var(--serif); font-weight: 600; font-size: 22px; color: var(--plum-deep); }
+  .brand:hover { text-decoration: none; }
+  nav.top ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; flex-wrap: wrap; }
+  nav.top a { color: var(--charcoal); font-size: 14px; font-weight: 500; padding: 6px 0; border-bottom: 2px solid transparent; }
+  nav.top a:hover { text-decoration: none; color: var(--plum-deep); }
+  nav.top a[aria-current="true"] { border-bottom-color: var(--plum); }
+
+  .herowrap { background: var(--lilac); }
+  .hero { max-width: 980px; margin: 0 auto; padding: 76px 24px 64px; display: grid; grid-template-columns: 1.25fr .75fr; gap: 56px; align-items: center; }
+  .hero h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(44px, 5.6vw, 66px); line-height: 1.02; margin: 0 0 22px; color: var(--charcoal); }
+  .hero h1 span { color: var(--plum); }
+  .hero .says { font-size: 21px; line-height: 1.5; margin: 0 0 18px; max-width: 36ch; }
+  .hero .meta { color: var(--slate); font-size: 15.5px; margin: 0 0 28px; max-width: 50ch; }
+  .cta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { display: inline-block; font-weight: 600; font-size: 15px; padding: 11px 20px; border-radius: 8px; background: var(--plum); color: #fff; }
+  .btn:hover { background: var(--plum-deep); text-decoration: none; }
+  .btn.ghost { background: transparent; color: var(--plum-deep); border: 1.5px solid var(--plum); }
+  .btn.ghost:hover { background: #fff; }
+  .heroimgs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
+  .heroimgs img { border-radius: 6px; border: 4px solid #fff; box-shadow: 0 16px 36px rgba(91,42,107,.22); aspect-ratio: 3 / 4; object-fit: cover; width: 100%; }
+  .heroimgs figure { display: contents; }
+  .heroimgs figcaption { grid-column: 1 / -1; font-size: 13.5px; color: var(--slate); margin-top: 6px; }
+
+  .stats { background: var(--plum); color: var(--ink-on-plum); }
+  .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px 24px; padding: 22px 24px; }
+  .stat .n { font-family: var(--serif); font-weight: 600; font-size: 26px; line-height: 1.1; }
+  .stat .l { font-size: 13.5px; margin-top: 5px; opacity: .92; }
+
+  main { max-width: 980px; margin: 0 auto; padding: 0 24px 80px; }
+  section { padding: 56px 0 12px; max-width: 760px; }
+  h2 { font-family: var(--serif); font-weight: 600; font-size: 32px; line-height: 1.15; margin: 0 0 6px; }
+  h2::after { content: ""; display: block; width: 48px; height: 4px; border-radius: 2px; background: var(--plum); margin-top: 12px; }
+  .lead { font-size: 18.5px; color: var(--slate); margin: 18px 0 24px; max-width: 60ch; line-height: 1.55; }
+  h3 { font-family: var(--serif); font-weight: 600; font-size: 22px; line-height: 1.3; margin: 32px 0 4px; }
+  p { margin: 0 0 14px; max-width: 66ch; }
+  .when { color: var(--plum-deep); font-size: 14px; font-weight: 600; margin: 0 0 10px; }
+  ul { padding-left: 20px; max-width: 66ch; }
+  li { margin-bottom: 6px; }
+
+  figure { margin: 20px 0; }
+  figcaption { font-size: 13.5px; color: var(--slate); margin-top: 8px; }
+  .photo { border-radius: 10px; border: 1px solid var(--line); }
+  .side { display: grid; grid-template-columns: 1.3fr 1fr; gap: 28px; align-items: start; }
+  .side p { max-width: none; }
+  .side figure { margin-top: 4px; }
+  .awards { list-style: none; padding: 0; margin: 20px 0 0; max-width: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 32px; }
+  .awards li { padding: 12px 14px; background: var(--mist); border-left: 4px solid var(--plum); border-radius: 0 8px 8px 0; font-size: 15px; margin: 0; }
+  .certs { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; max-width: none; }
+  .certs img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
+  .certs figure { margin: 0; }
+  .certs figcaption { font-size: 12.5px; }
+  .kv { display: grid; grid-template-columns: 160px 1fr; gap: 8px 20px; max-width: 600px; margin: 8px 0 0; }
+  .kv dt { color: var(--slate); font-size: 14.5px; }
+  .kv dd { margin: 0; }
+  footer { background: var(--lilac); color: var(--slate); font-size: 13.5px; }
+  footer div { max-width: 980px; margin: 0 auto; padding: 22px 24px; }
+
+  @media (max-width: 860px) {
+    .topin { height: auto; padding: 12px 16px; flex-direction: column; align-items: flex-start; gap: 6px; }
+    nav.top ul { gap: 14px; }
+    .hero { grid-template-columns: 1fr; gap: 32px; padding: 44px 16px; }
+    .stats .wrap { grid-template-columns: repeat(2, 1fr); }
+    main { padding: 0 16px 64px; }
+    .side { grid-template-columns: 1fr; }
+    .awards { grid-template-columns: 1fr; }
+    .certs { grid-template-columns: 1fr 1fr; }
+    h2 { font-size: 27px; }
+    .kv { grid-template-columns: 1fr; gap: 2px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="topin">
+    <a class="brand" href="#top">Ellie Kim</a>
+    <nav class="top" aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#debate">Debate</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#civic">Elections</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#honors">Honors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="herowrap" id="top">
+  <section class="hero">
+    <div>
+      <h1>Ellie <span>Kim</span></h1>
+      <p class="says">Debater and debate teacher, author of a picture book series about seeing the other side, and writer of a county-reviewed voter guide for first-time voters.</p>
+      <p class="meta">Hayul Kim. Senior, Northern Valley Regional High School at Old Tappan, New Jersey. Class of 2027. Applying to study political science and public policy.</p>
+      <div class="cta">
+        <a class="btn" href="records/before-you-vote.pdf">Read the voter guide</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="heroimgs">
+      <figure>
+        <img src="images/before-you-vote-cover.jpg" alt="Cover of Before You Vote, a Bergen County guide to elections, civic participation, and your first vote">
+        <img src="images/american-legion-bergen-2026.jpg" alt="Ellie holding her American Legion certificate in front of a display case at an American Legion post">
+        <figcaption><em>Before You Vote</em>, October 2026, and the Bergen County American Legion Oratorical Contest, 2026.</figcaption>
+      </figure>
+    </div>
+  </section>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><div class="n">300 copies</div><div class="l">of my voter guide, donated to 10 libraries and the County Clerk</div></div>
+    <div class="stat"><div class="n">40+ students</div><div class="l">in the library debate program I started</div></div>
+    <div class="stat"><div class="n">John Locke Prize</div><div class="l">Very High Commendation, Politics, 2026</div></div>
+    <div class="stat"><div class="n">National Merit</div><div class="l">Semifinalist, 2027 program</div></div>
+  </div>
+</div>
+
+<main>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="lead">Three threads run through this page: competing in debate, teaching it to younger students, and working inside the offices that run local elections.</p>
+    <p>I am a senior at Northern Valley Regional High School at Old Tappan. This year I am taking AP English Literature, AP Spanish Language and Culture, AP Calculus AB, AP Macroeconomics, AP Microeconomics, AP Human Geography, and AP Environmental Science, after AP English Language, AP World History, AP US Government and Politics, AP Precalculus, and AP Research as a junior. I earned the AP Capstone Diploma, I scored a 1560 on the SAT, with a 790 in Math, and I was named a Semifinalist in the 2027 National Merit Scholarship Program.</p>
+    <p>Outside class I compete in Lincoln-Douglas debate and extemporaneous speaking, I teach debate to middle schoolers and to students learning English, and since grade 11 I have worked in county and town government: as a poll worker, as an intern at the Bergen County Board of Elections, and as a co-founder of the Bergen County Youth Assembly.</p>
+  </section>
+
+  <section id="debate">
+    <h2>Debate and speaking</h2>
+    <p class="lead">Four years of debate, on my school’s team and on my own on the national circuit.</p>
+
+    <h3>NVOT Debate Team, varsity co-captain</h3>
+    <p class="when">Grades 9 to 12; co-captain in grades 11 and 12; Bergen County Debate League, policy debate</p>
+    <p>The team advisor chose me as co-captain through an application. I write coaching materials and lead weekly practices for five varsity teams and more than five JV teams. I brought back mandatory weekly practices. After a season with no varsity awards, our varsity teams won an award at 7 of 8 tournaments in 2025 to 2026, and our team finished second in Bergen County.</p>
+
+    <h3>National circuit, Lincoln-Douglas and Extemporaneous Speech</h3>
+    <p class="when">Grades 9 to 12, including summers; competing without a club team since grade 11</p>
+    <p>I started in Public Forum, moved to Lincoln-Douglas in grade 10, and added Extemporaneous Speech in grade 11. I reached the top 8 of 85 at the Princeton Classic in 2024, and in 2025 I attended the National Symposium for Debate, a three-week residential camp, on a full scholarship.</p>
+
+    <h3>American Legion Oratorical Contest</h3>
+    <p class="when">1st place in Bergen County, 2026; 4th place in New Jersey</p>
+    <p>Each speaker gives a prepared oration on the U.S. Constitution and then speaks on an assigned topic. I placed first in Bergen County and fourth in the state, which came with a $1,000 scholarship.</p>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <p class="lead">Since grade 9 I have taught debate and public speaking to younger students in several separate programs.</p>
+
+    <h3>Speech and Debate Library Summer Program, founder and instructor</h3>
+    <p class="when">Summers after grades 9, 10, and 11; more than 40 students</p>
+    <p>I started a public speaking and debate program at my local public library and wrote its curriculum for beginner and intermediate students. Each summer runs four weeks, with two one-hour classes a week, and I recruit students through four local middle schools. The program has had a waitlist every year. In the second summer I booked a larger room and added two teaching assistants. In the third summer I made the class smaller on purpose, so that every student got individual instruction.</p>
+
+    <h3>Harrington Park Middle School Debate Team, volunteer coach</h3>
+    <p class="when">Grades 10 and 11; more than 25 debaters</p>
+    <p>My former middle school advisor asked me to help. I was the only coach with debate experience, so I taught research and case writing, moderated practice debates, and gave feedback at weekly meetings.</p>
+
+    <h3>Eloquence Academy</h3>
+    <p class="when">Program Instructor, then Service Learning Fellow, now North Jersey Regional Director; grades 9 to 12</p>
+    <p>For three school years I taught a weekly English and debate class for ESL students, run with the Latino Education Advancement Fund, and adapted the debate lessons to each student’s level of English. As a fellow I won a $1,000 microgrant from the Karma for Cara Foundation and used it to create Exploring the Bioverse, a six-week online biology bootcamp for middle schoolers that I ran with four other high school students. As Regional Director, I am now reaching out to schools in North Jersey to start debate programs.</p>
+
+    <h3>Women in Debate, Eastern Region Coordinator</h3>
+    <p class="when">Grades 11 and 12; national leadership board</p>
+    <p>With the Central and Western coordinators, I run the organization’s mentorship program. I review applications, make the mentor pairings, help lead onboarding for new mentors, and fix pairings that are not working. The program has more than 110 mentor pairs. I also co-founded the W.inners Win podcast, where I interview current and former board members.</p>
+  </section>
+
+  <section id="civic">
+    <h2>Elections and civic work</h2>
+    <p class="lead">Starting in grade 11, I worked inside the offices that run elections, and then used what I learned to help other students vote.</p>
+
+    <h3><em>Before You Vote</em>, a guide for first-time voters</h3>
+    <p class="when">Bergen County Youth Assembly, October 2026; reviewed by Bergen County election officials</p>
+    <div class="side">
+      <div>
+        <p>I wrote an eight-page nonpartisan guide for Bergen County high school students. It covers who can vote, how to read a sample ballot, the three ways to vote, how local, county, state, and federal government divide their work, and how to get involved before turning 18. Every rule and date comes from an official source, and eight QR codes link to official election pages.</p>
+        <p>The Bergen County Board of Elections and the Bergen County Superintendent of Elections reviewed the guide in September 2026, and I made every correction they asked for. We donated 300 free copies. The Office of the Bergen County Clerk handed out 30 at its voter presentation at my high school, and 270 went to 10 public libraries in Closter, Fort Lee, Hackensack, Harrington Park, Leonia, Oradell, Palisades Park, Paramus, Ridgefield Park, and River Edge.</p>
+        <a class="btn" href="records/before-you-vote.pdf">Read the guide (PDF)</a>
+      </div>
+      <figure>
+        <img class="photo" src="images/before-you-vote-cover.jpg" alt="Cover of Before You Vote">
+        <figcaption>The cover of <em>Before You Vote</em>.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Bergen County Board of Elections, intern and poll worker</h3>
+    <p class="when">Intern, spring 2026; paid poll worker, November 2025 election and June 2026 primary</p>
+    <p>As an intern I processed hundreds of mail-in ballots, including signature checks, sorted ballots for counting, and organized poll worker records before Election Day. As a poll worker, trained through the Board’s high school program, I signed in voters and showed them how to use the voting machines.</p>
+
+    <h3>Bergen County Youth Assembly, co-founder</h3>
+    <p class="when">Vice Chair and Director of Civic Engagement; active since November 2025, formally established July 11, 2026</p>
+    <p>I am one of six founders from six Bergen County high schools, and I am the group’s contact with the county election offices. On August 31, 2026, I presented our civic engagement work at our meeting with the Office of the Bergen County Executive.</p>
+
+    <h3>League of Women Voters, intern and committee member</h3>
+    <p class="when">Grades 11 and 12; NJ Youth Committee and Government Committee</p>
+    <p>I contacted the League myself to ask how to get involved, and they offered me an internship and both committee seats. On the Government Committee I help decide which bills in the New Jersey Legislature the League supports.</p>
+
+    <h3>NJ Youth Voices Project, co-founder</h3>
+    <p class="when">Started August 2026, with guidance from the League of Women Voters of New Jersey</p>
+    <p>A friend and I launched an exploratory statewide survey of civic attitudes among people ages 16 to 25. Four college partners and the NJ Youth Corps helped share it, and it has more than 138 responses from 14 of New Jersey’s 21 counties. We plan to publish a report of the findings with recommendations.</p>
+
+    <h3>Harrington Park Borough Hall, student volunteer</h3>
+    <p class="when">July 14 to August 5, 2026; approved by the Mayor and Council in <a href="records/harrington-park-resolution-2026-139.pdf">Resolution 2026-139</a></p>
+    <p>I asked the mayor about summer internships, and the mayor connected me to the Municipal Clerk. I organized and filed municipal records and tracked how long each type of record must be kept. I am also a member of the Harrington Park Youth Council.</p>
+  </section>
+
+  <section id="writing">
+    <h2>Writing</h2>
+    <p class="lead">Research on who was included in early American ideas of rights, an essay on politics, and a book series for young readers.</p>
+
+    <h3>John Locke Institute Global Essay Prize, Very High Commendation</h3>
+    <p class="when">2026; Politics category</p>
+    <p>My essay in the Politics category received a Very High Commendation in an international competition that draws tens of thousands of entries each year.</p>
+
+    <h3>“Rights for Whom? A Comparison Between Early America and First-Wave Feminism”</h3>
+    <p class="when">Published in the <a href="https://www.curieuxreview.com/2026-selected-issues">Curieux Academic Review</a>, Humanities and Social Sciences, 2026 Issue Part 1</p>
+    <p>My paper begins on page 71 of the <a href="https://www.curieuxreview.com/_files/ugd/60ed3c_99b0e0cb5c504940ac7ddff77f8aa5e9.pdf">issue</a>.</p>
+
+    <h3><em>The Other Side</em>, a picture book series</h3>
+    <p class="when">2026; seven books, illustrated by Cara Ko</p>
+    <p>I turned the beginner lessons from my library program into a series of picture books. Each book teaches elementary school readers to listen to a different point of view and to change their minds when they learn something new.</p>
+    <p>On Amazon: <a href="https://a.co/d/08vH377O">Book 1</a>, <a href="https://a.co/d/06LGuINt">Book 2</a>, <a href="https://a.co/d/07xS8hRt">Book 3</a>, <a href="https://a.co/d/076fmKp7">Book 4</a></p>
+  </section>
+
+  <section id="leadership">
+    <h2>Leadership</h2>
+    <p class="lead">Officer roles in school clubs and work with student-run organizations outside school.</p>
+
+    <h3>DECA, Co-President</h3>
+    <p class="when">Vice President of Training and Development in grade 11; Co-President in grade 12</p>
+    <div class="side">
+      <div>
+        <p>As Vice President I made a practice calendar for our 99-member chapter, started daily lunchtime practice sessions led by officers, and ran a “How to Roleplay” session. Our state conference qualifiers rose from 16 in 2025 to 32 in 2026. Now, as Co-President, I set the weekly agendas and assign the work for competitions, service events, and fundraisers.</p>
+        <p>I compete in Business Services Marketing. In 2025 I was an international finalist at the DECA International Career Development Conference, and in 2026 I placed second overall in New Jersey.</p>
+      </div>
+      <figure>
+        <img class="photo" src="images/deca-nj-state-2026-roleplay.jpg" alt="Ellie holding two awards in front of a New Jersey DECA backdrop">
+        <figcaption>New Jersey DECA State Conference, 2026.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Model UN, Vice President and Senior Representative</h3>
+    <p class="when">Grades 9 to 12; officer in grades 11 and 12</p>
+    <p>In a club of more than 130 members, I help lead meetings and mentor members on procedure, position papers, and public speaking.</p>
+
+    <h3>VOY (Voices of the Young), Director of Policy and Digital Strategy</h3>
+    <p class="when">2025 to present</p>
+    <p>I helped develop <a href="https://mo-soop.glide.page">Mo Soop</a>, an anonymous peer support app for teens, and <a href="https://mo-ri.glide.page">Mo Ri</a>, an app for students with ADHD. I research youth wellbeing issues to guide the apps’ content and oversee outreach campaigns.</p>
+    <div class="cta">
+      <a class="btn" href="https://mo-soop.glide.page" target="_blank" rel="noopener">Open Mo Soop</a>
+      <a class="btn ghost" href="https://mo-ri.glide.page" target="_blank" rel="noopener">Open Mo Ri</a>
+    </div>
+
+    <h3>Other commitments</h3>
+    <ul>
+      <li>CDHW (Clothing Donations to Help Kids in the World), Operations Director since grade 9: I run the logistics for clothing drives that serve pediatric patients in New Jersey hospitals, and I led an effort to extend the service to foster care facilities.</li>
+      <li>LiNK North Jersey Rescue Team, Director of Advocacy and Fundraising since grade 9.</li>
+      <li>Technology Student Association, President in grade 11.</li>
+      <li>Peer Mentor for incoming freshmen, grades 10 to 12.</li>
+      <li>Chodae Community Church, every Sunday since grade 9: I help teach first and second graders and play flute in the Sanctus Orchestra.</li>
+    </ul>
+  </section>
+
+  <section id="honors">
+    <h2>Honors</h2>
+    <ul class="awards">
+      <li>John Locke Institute Global Essay Prize, Very High Commendation in Politics, 2026</li>
+      <li>American Legion Oratorical Contest, 1st place in Bergen County, 2026; 4th place in New Jersey</li>
+      <li><a href="records/tsa-nationals-2025-extemporaneous-speech.pdf">Technology Student Association National Conference, 5th place in Extemporaneous Speech, 2025</a></li>
+      <li><a href="records/deca-icdc-2025-business-services-marketing.pdf">DECA International Career Development Conference, international finalist, Business Services Marketing, 2025</a></li>
+      <li>DECA New Jersey State Career Development Conference, 2nd overall, 2026</li>
+      <li>Presidential 1776 Civics Award, National Semifinalist</li>
+      <li>National Merit Scholarship Program, Semifinalist, 2027 program</li>
+      <li>Princeton Classic, Lincoln-Douglas, top 8 of 85, 2024</li>
+      <li>Global Citizens Open Innovation SDGs Challenge, Champion, 2024</li>
+      <li>AP Capstone Diploma; National Honor Society</li>
+    </ul>
+    <ul class="certs">
+      <li><figure><img src="images/american-legion-certificate.jpg" alt="American Legion certificate for 1st place in the Bergen County Oratorical Contest, awarded to Ellie Kim" loading="lazy"><figcaption>American Legion, Bergen County</figcaption></figure></li>
+      <li><figure><img src="images/deca-icdc-2025-finalist.jpg" alt="DECA international finalist medals and competitor badge from Orlando, 2025" loading="lazy"><figcaption>DECA international finalist</figcaption></figure></li>
+      <li><figure><img src="images/deca-nj-state-2026.jpg" alt="New Jersey DECA trophies for 2nd place overall and Role Play awards, 2026" loading="lazy"><figcaption>NJ DECA, 2nd overall</figcaption></figure></li>
+      <li><figure><img src="images/tsa-nj-state-2024-2025.jpg" alt="Two NJ TSA trophies for 2nd place in Extemporaneous Speech, 2024 and 2025" loading="lazy"><figcaption>NJ TSA Extemporaneous Speech</figcaption></figure></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <!-- Replace the email address below with Ellie's real address before publishing. -->
+    <dl class="kv">
+      <dt>Email</dt><dd><a href="mailto:ellie.kim@example.com">ellie.kim@example.com</a></dd>
+      <dt>Location</dt><dd>Bergen County, New Jersey</dd>
+      <dt>Voter guide</dt><dd><a href="records/before-you-vote.pdf"><em>Before You Vote</em> (PDF)</a></dd>
+      <dt>The Other Side</dt><dd><a href="https://a.co/d/08vH377O">Book 1 on Amazon</a></dd>
+      <dt>Mo Soop</dt><dd><a href="https://mo-soop.glide.page">mo-soop.glide.page</a></dd>
+      <dt>Mo Ri</dt><dd><a href="https://mo-ri.glide.page">mo-ri.glide.page</a></dd>
+    </dl>
+  </section>
+
+</main>
+<footer><div>© 2026 Ellie Kim</div></footer>
+
+<script>
+  const navLinks = [...document.querySelectorAll('nav.top a[href^="#"]')];
+  const byId = new Map(navLinks.map(a => [a.getAttribute('href').slice(1), a]));
+  const watcher = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach(a => a.removeAttribute('aria-current'));
+      const link = byId.get(entry.target.id);
+      if (link) link.setAttribute('aria-current', 'true');
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  document.querySelectorAll('main section[id]').forEach(s => watcher.observe(s));
+</script>
+</body>
+</html>
