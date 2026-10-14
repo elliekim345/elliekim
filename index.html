@@ -81,10 +81,22 @@
   .side figure { margin-top: 4px; }
   .awards { list-style: none; padding: 0; margin: 20px 0 0; max-width: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 32px; }
   .awards li { padding: 12px 14px; background: var(--mist); border-left: 4px solid var(--pink); border-radius: 0 8px 8px 0; font-size: 15px; margin: 0; }
-  .certs { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; max-width: none; }
+  .certs { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; max-width: none; }
   .certs img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
   .certs figure { margin: 0; }
   .certs figcaption { font-size: 12.5px; }
+  .pages { list-style: none; padding: 0; margin: 22px 0 8px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: none; }
+  .pages li { margin: 0; }
+  .pages img { width: 100%; border-radius: 6px; border: 1px solid var(--line); box-shadow: 0 6px 18px rgba(156,20,80,.10); }
+  .pages figcaption { font-size: 12.5px; }
+  .pages figure { margin: 0; }
+  .side.narrow { grid-template-columns: 1.6fr 1fr; }
+  .stack { display: grid; gap: 14px; }
+  .covers { list-style: none; padding: 0; margin: 20px 0 6px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; max-width: none; }
+  .covers li { margin: 0; }
+  .covers figure { margin: 0; }
+  .covers img { width: 100%; border-radius: 6px; border: 1px solid var(--line); box-shadow: 0 8px 22px rgba(156,20,80,.12); }
+  .covers figcaption { font-size: 12.5px; }
   .kv { display: grid; grid-template-columns: 160px 1fr; gap: 8px 20px; max-width: 600px; margin: 8px 0 0; }
   .kv dt { color: var(--slate); font-size: 14.5px; }
   .kv dd { margin: 0; }
@@ -100,6 +112,9 @@
     .side { grid-template-columns: 1fr; }
     .awards { grid-template-columns: 1fr; }
     .certs { grid-template-columns: 1fr 1fr; }
+    .pages { grid-template-columns: 1fr 1fr; }
+    .covers { grid-template-columns: 1fr 1fr; }
+    .side.narrow { grid-template-columns: 1fr; }
     h2 { font-size: 27px; }
     .kv { grid-template-columns: 1fr; gap: 2px 0; }
   }
@@ -160,59 +175,77 @@
 
   <section id="about">
     <h2>About</h2>
-    <p class="lead">Three threads run through this page: competing in debate, teaching it to younger students, and working inside the offices that run local elections.</p>
-    <p>I am a senior at Northern Valley Regional High School at Old Tappan. This year I am taking AP English Literature, AP Spanish Language and Culture, AP Calculus AB, AP Macroeconomics, AP Microeconomics, AP Human Geography, and AP Environmental Science, after AP English Language, AP World History, AP US Government and Politics, AP Precalculus, and AP Research as a junior. I earned the AP Capstone Diploma, I scored a 1560 on the SAT, with a 790 in Math, and I was named a Semifinalist in the 2027 National Merit Scholarship Program.</p>
-    <p>Outside class I compete in Lincoln-Douglas debate and extemporaneous speaking, I teach debate to middle schoolers and to students learning English, and since grade 11 I have worked in county and town government: as a poll worker, as an intern at the Bergen County Board of Elections, and as a co-founder of the <a href="https://bcyouthassembly.org" target="_blank" rel="noopener">Bergen County Youth Assembly</a>.</p>
+    <p class="lead">Three threads run through this page: competing in debate, teaching it to younger students, and working inside the offices that run local elections. Each one grew out of the one before it.</p>
+    <p>Debate came first. I joined my school’s team in grade 9 and started competing on the national circuit the same year. Debate asks you to argue the side you were assigned, not the side you prefer, and to listen closely enough to an opponent to answer the strongest version of what they said. By grade 10 I wanted younger students to learn that skill earlier than I did, so I started a summer program at my public library and began coaching at my old middle school. Teaching debate to twelve-year-olds, and later to students who were still learning English, showed me how rarely anyone teaches young people how to disagree well.</p>
+    <p>In grade 11 the same interest moved from the classroom to the county. I trained as a poll worker, interned at the Bergen County Board of Elections, and joined the League of Women Voters. Processing mail-in ballots and signing in voters taught me how much of democracy is paperwork done carefully by people most voters never see. It also showed me how little students my age know about the system they are about to enter. With five other students I co-founded the <a href="https://bcyouthassembly.org" target="_blank" rel="noopener">Bergen County Youth Assembly</a>, and I wrote <em>Before You Vote</em>, a county-reviewed guide that is now in ten public libraries.</p>
+    <p>I am a senior at Northern Valley Regional High School at Old Tappan. This year I am taking AP English Literature, AP Spanish Language and Culture, AP Calculus AB, AP Macroeconomics, AP Microeconomics, AP Human Geography, and AP Environmental Science, after AP English Language, AP World History, AP US Government and Politics, AP Precalculus, and AP Research as a junior. I earned the AP Capstone Diploma, I scored a 1560 on the SAT, with a 790 in Math, and I was named a Semifinalist in the 2027 National Merit Scholarship Program. I plan to study political science and public policy, and I want to keep working on the question that runs through everything below: how do you get people, especially young people, to take part in decisions that affect them?</p>
   </section>
 
   <section id="debate">
     <h2>Debate and speaking</h2>
-    <p class="lead">Four years of debate, on my school’s team and on my own on the national circuit.</p>
+    <p class="lead">Four years of debate, on my school’s team and on my own on the national circuit. They are two different activities: one is a county league team that I now lead, and the other is individual competition that I pursue outside the school program.</p>
 
     <h3>NVOT Debate Team, varsity co-captain</h3>
     <p class="when">Grades 9 to 12; co-captain in grades 11 and 12; Bergen County Debate League, policy debate</p>
-    <p>The team advisor chose me as co-captain through an application. I write coaching materials and lead weekly practices for five varsity teams and more than five JV teams. I brought back mandatory weekly practices. After a season with no varsity awards, our varsity teams won an award at 7 of 8 tournaments in 2025 to 2026, and our team finished second in Bergen County.</p>
+    <p>I joined as a JV debater in grade 9 and moved to varsity in grade 10. In grade 11 the team advisor chose me as co-captain through an application. The job is mostly coaching: I write the practice materials and lead weekly practices for five varsity teams and more than five JV teams, which means teaching the case, drilling the cross-examination, and watching rounds to find the habit that is costing each team a ballot.</p>
+    <p>When I took over, the team had just finished a season with no varsity awards, and practices had become optional. I made weekly practice mandatory again and rebuilt it around rounds instead of lectures. In the 2025 to 2026 season our varsity teams won an award at 7 of 8 tournaments, the team finished second in Bergen County, and I finished as the second-ranked individual speaker in the county.</p>
 
     <h3>National circuit, Lincoln-Douglas and Extemporaneous Speech</h3>
     <p class="when">Grades 9 to 12, including summers; competing without a club team since grade 11</p>
-    <p>I started in Public Forum, moved to Lincoln-Douglas in grade 10, and added Extemporaneous Speech in grade 11. I reached the top 8 of 85 at the Princeton Classic in 2024, and in 2025 I attended the National Symposium for Debate, a three-week residential camp, on a full scholarship.</p>
+    <p>I started in Public Forum in grade 9, when I placed 4th of 111 speakers at the University of Michigan tournament and 6th of 272 speakers in the TOC Digital Series. In grade 10 I switched to Lincoln-Douglas, a one-on-one format built on moral philosophy, where a round can turn on whether you can defend a definition of justice. I reached the top 8 of 85 at the Princeton Classic in 2024 and the top 32 of 95 at the Yale Invitational in 2025. In grade 11 I added Extemporaneous Speech, in which you draw a current-events question and have thirty minutes to prepare a seven-minute speech; in 2026 I placed 2nd of 14 at the Harvard Debate UKTOC International Qualifier.</p>
+    <p>I trained with a club in grades 9 and 10. Since grade 11 I have competed with no club and no coach, which means I research the topic, write the cases, and cut the evidence myself. In 2025 I attended the National Symposium for Debate, a three-week residential camp, on a full scholarship.</p>
 
     <h3>American Legion Oratorical Contest</h3>
     <p class="when">1st place in Bergen County, 2026; 4th place in New Jersey</p>
-    <p>Each speaker gives a prepared oration on the U.S. Constitution and then speaks on an assigned topic. I placed first in Bergen County and fourth in the state, which came with a $1,000 scholarship.</p>
+    <p>Each speaker gives a prepared eight-to-ten-minute oration on the U.S. Constitution, with no notes, and then draws one of that year’s assigned constitutional topics and speaks on it for three to five minutes with about five minutes’ notice. The contest rewards the two things debate had already trained in me: a clear argument and the ability to speak on a topic I did not choose. I placed first in Bergen County and fourth in the state, which came with a $1,000 scholarship.</p>
   </section>
 
   <section id="teaching">
     <h2>Teaching</h2>
-    <p class="lead">Since grade 9 I have taught debate and public speaking to younger students in several separate programs.</p>
+    <p class="lead">Since grade 9 I have taught debate and public speaking to younger students in several separate programs: one I founded, one I coach as a volunteer, two nonprofits, and two paid coaching jobs. Most of the students I teach would never have found debate on their own.</p>
 
     <h3>Speech and Debate Library Summer Program, founder and instructor</h3>
     <p class="when">Summers after grades 9, 10, and 11; more than 40 students</p>
-    <p>I started a public speaking and debate program at my local public library and wrote its curriculum for beginner and intermediate students. Each summer runs four weeks, with two one-hour classes a week, and I recruit students through four local middle schools. The program has had a waitlist every year. In the second summer I booked a larger room and added two teaching assistants. In the third summer I made the class smaller on purpose, so that every student got individual instruction.</p>
+    <p>The summer after grade 9, I asked my local public library whether I could teach a free public speaking and debate class there. Debate in my area is mostly taught through private clubs that charge for it, and I wanted a version that a middle schooler could walk into for free. The library said yes. I wrote the curriculum myself, one track for beginners and one for intermediate students, and I recruited students through partnerships with four local middle schools.</p>
+    <p>Each summer runs four weeks, with two one-hour classes a week. Students learn to build an argument, to find evidence, to give a speech without reading it, and, by the last week, to debate a classmate in front of the group. The program has had a waitlist every year. In the second summer I booked a larger room and trained two teaching assistants so that I could take more students. In the third summer I did the opposite and made the class smaller on purpose, because I had learned that the students who improved most were the ones who got individual feedback on every speech.</p>
 
     <h3>Harrington Park Middle School Debate Team, volunteer coach</h3>
     <p class="when">Grades 10 and 11; more than 25 debaters</p>
-    <p>My former middle school advisor asked me to help. I was the only coach with debate experience, so I taught research and case writing, moderated practice debates, and gave feedback at weekly meetings.</p>
+    <p>My former middle school advisor asked me to come back and help the team I had once been on. I was the only coach with debate experience, so the faculty advisors relied on me to teach the parts they could not: how to research a resolution, how to write a case, and how to answer an argument instead of repeating your own. I ran the weekly meetings, moderated practice debates, and gave each debater written feedback.</p>
 
     <h3>Eloquence Academy</h3>
     <p class="when">Program Instructor, then Service Learning Fellow, now North Jersey Regional Director; grades 9 to 12</p>
-    <p>For three school years I taught a weekly English and debate class for ESL students, run with the Latino Education Advancement Fund, and adapted the debate lessons to each student’s level of English. As a fellow I won a $1,000 microgrant from the Karma for Cara Foundation and used it to create Exploring the Bioverse, a six-week online biology bootcamp for middle schoolers that I ran with four other high school students. As Regional Director, I am now reaching out to schools in North Jersey to start debate programs.</p>
+    <p>Eloquence Academy is a nonprofit that brings speech and debate to students who do not have access to it. For three school years I taught a weekly English and debate class for ESL students, run in partnership with the Latino Education Advancement Fund. Many of my students were learning English and arguing in it at the same time, so I rewrote the debate lessons for different levels of English and taught them to build a case from the vocabulary they already had. Watching a student argue a full round in a language she was still learning is the reason I kept teaching.</p>
+    <p>As a Service Learning Fellow, I won a $1,000 microgrant from the Karma for Cara Foundation and used it to create Exploring the Bioverse, a six-week online biology bootcamp for middle schoolers. I recruited four other high school students to teach it with me and led the planning meetings. This year, as North Jersey Regional Director, I am responsible for bringing debate programs to new schools in the region, and I am contacting partner schools now.</p>
 
     <h3>Women in Debate, Eastern Region Coordinator</h3>
     <p class="when">Grades 11 and 12; national leadership board</p>
-    <p>With the Central and Western coordinators, I run the organization’s mentorship program. I review applications, make the mentor pairings, help lead onboarding for new mentors, and fix pairings that are not working. The program has more than 110 mentor pairs. I also co-founded the W.inners Win podcast, where I interview current and former board members.</p>
+    <div class="side narrow">
+      <div>
+    <p>Women in Debate is a national nonprofit for girls in an activity where they are still outnumbered. I joined as a mentor in grade 11 and was then chosen for the national leadership board. With the Central and Western coordinators, I run the organization’s flagship mentorship program: I review mentor and mentee applications, make the pairings, co-lead onboarding for new mentors on Zoom, and step in when a pairing is not working. The program now has more than 110 mentor pairs, and the community has more than 155 members.</p>
+    <p>I also co-founded the W.inners Win podcast in the 2025 to 2026 season. I have interviewed three current and former board members about how they started, what they lost rounds over, and what they would tell a girl at her first tournament.</p>
+      </div>
+      <figure>
+        <img class="photo" src="images/women-in-debate-instagram-2026.jpg" alt="Ellie answering questions on the Women in Debate Instagram story" loading="lazy">
+        <figcaption>Taking mentee questions on the Women in Debate Instagram, 2026.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Acclive Academy and Bergen Debate Club, speech and debate coach</h3>
+    <p class="when">Paid positions; grades 9 to 12 and grades 11 to 12</p>
+    <p>I am paid to coach younger students in competitive speech and debate events, and I have coached more than ten students one on one. I have also been hired to judge rounds at national-level middle school tournaments, which has taught me to see a debate from the only seat that decides it.</p>
   </section>
 
   <section id="civic">
     <h2>Elections and civic work</h2>
-    <p class="lead">Starting in grade 11, I worked inside the offices that run elections, and then used what I learned to help other students vote.</p>
+    <p class="lead">Starting in grade 11, I worked inside the offices that run elections, and then used what I learned to help other students vote. The internships, the poll work, the League roles, and the two projects I co-founded are related, but each one is a separate job.</p>
 
     <h3><em>Before You Vote</em>, a guide for first-time voters</h3>
     <p class="when"><a href="https://bcyouthassembly.org" target="_blank" rel="noopener">Bergen County Youth Assembly</a>, October 2026; reviewed by Bergen County election officials</p>
     <div class="side">
       <div>
-        <p>I wrote an eight-page nonpartisan guide for Bergen County high school students. It covers who can vote, how to read a sample ballot, the three ways to vote, how local, county, state, and federal government divide their work, and how to get involved before turning 18. Every rule and date comes from an official source, and eight QR codes link to official election pages.</p>
-        <p>The Bergen County Board of Elections and the Bergen County Superintendent of Elections reviewed the guide in September 2026, and I made every correction they asked for. We donated 300 free copies. The Office of the Bergen County Clerk handed out 30 at its voter presentation at my high school, and 270 went to 10 public libraries in Closter, Fort Lee, Hackensack, Harrington Park, Leonia, Oradell, Palisades Park, Paramus, Ridgefield Park, and River Edge.</p>
+        <p>Most of my classmates will be eligible to vote within a year, and almost none of them know what a sample ballot looks like, how a county differs from a municipality, or that New Jersey lets you register at 17 if you will be 18 by Election Day. I know this because I have signed voters in at the polls. So I wrote an eight-page nonpartisan guide for Bergen County high school students. It covers who can vote, how to read a sample ballot, the three ways to vote, how local, county, state, and federal government divide their work, and how to get involved before turning 18. Every rule and date comes from an official source, and eight QR codes link to the official election pages so that the guide stays correct after the dates change.</p>
+        <p>I did not want a student-made guide to be wrong about anything, so I sent it to the people whose job it is to be right. The Bergen County Board of Elections and the Bergen County Superintendent of Elections reviewed the guide in September 2026, and I made every correction they asked for. We donated 300 free copies. The Office of the Bergen County Clerk handed out 30 at its voter presentation at my high school, and 270 went to 10 public libraries in Closter, Fort Lee, Hackensack, Harrington Park, Leonia, Oradell, Palisades Park, Paramus, Ridgefield Park, and River Edge.</p>
         <a class="btn" href="records/before-you-vote.pdf">Read the guide (PDF)</a>
       </div>
       <figure>
@@ -220,71 +253,104 @@
         <figcaption>The cover of <em>Before You Vote</em>.</figcaption>
       </figure>
     </div>
+    <ul class="pages">
+      <li><figure><img src="images/before-you-vote-page-2.jpg" alt="Page 2 of Before You Vote: Wherever you are, there is something here for you" loading="lazy"><figcaption>Page 2: where to start, by age</figcaption></figure></li>
+      <li><figure><img src="images/before-you-vote-page-3.jpg" alt="Page 3 of Before You Vote: Get ready to vote, with registration rules and QR code" loading="lazy"><figcaption>Page 3: registering in New Jersey</figcaption></figure></li>
+      <li><figure><img src="images/before-you-vote-page-5.jpg" alt="Page 5 of Before You Vote: the three ways to vote in Bergen County" loading="lazy"><figcaption>Page 5: the three ways to vote</figcaption></figure></li>
+      <li><figure><img src="images/before-you-vote-page-7.jpg" alt="Page 7 of Before You Vote: ways to get involved before turning 18" loading="lazy"><figcaption>Page 7: getting involved before 18</figcaption></figure></li>
+    </ul>
 
     <h3>Bergen County Board of Elections, intern and poll worker</h3>
     <p class="when">Intern, spring 2026; paid poll worker, November 2025 election and June 2026 primary</p>
-    <p>As an intern I processed hundreds of mail-in ballots, including signature checks, sorted ballots for counting, and organized poll worker records before Election Day. As a poll worker, trained through the Board’s high school program, I signed in voters and showed them how to use the voting machines.</p>
+    <p>I trained through the Board’s high school poll worker program and worked a full Election Day in November 2025 and again at the June 2026 primary. I signed in registered voters, checked their records, and showed first-time voters how to use the voting machines. Over spring break of grade 11 I came back as an unpaid intern for a week. I processed hundreds of mail-in ballots, including the individual signature checks that decide whether a ballot counts, sorted ballots for counting, packed mail-in ballots for residents, and organized the poll worker records before Election Day. Nothing I have read about elections taught me as much as a week of checking signatures.</p>
 
     <h3><a href="https://bcyouthassembly.org" target="_blank" rel="noopener">Bergen County Youth Assembly</a>, co-founder</h3>
     <p class="when">Vice Chair and Director of Civic Engagement; active since November 2025, formally established July 11, 2026</p>
-    <p>I am one of six founders from six Bergen County high schools, and I am the group’s contact with the county election offices. On August 31, 2026, I presented our civic engagement work at our meeting with the Office of the Bergen County Executive.</p>
+    <p>Six of us, from six different Bergen County high schools, started the Youth Assembly in November 2025 so that students would have an organized way to work with county government. Each founder leads one project; mine is civic engagement, which is where <em>Before You Vote</em> came from. I am the group’s contact with the county election offices. On August 31, 2026, I presented our civic engagement work at our meeting with the Office of the Bergen County Executive, and on September 21, 2026, all six founders signed a letter to Congressman Josh Gottheimer proposing a Youth Advisory Council for New Jersey’s 5th Congressional District.</p>
     <a class="btn ghost" href="https://bcyouthassembly.org" target="_blank" rel="noopener">Visit bcyouthassembly.org</a>
 
     <h3>League of Women Voters, intern and committee member</h3>
     <p class="when">Grades 11 and 12; NJ Youth Committee and Government Committee</p>
-    <p>I contacted the League myself to ask how to get involved, and they offered me an internship and both committee seats. On the Government Committee I help decide which bills in the New Jersey Legislature the League supports.</p>
+    <p>I emailed the League myself to ask how a high school student could get involved, and they offered me an internship and seats on two committees. On the Government Committee I sit with adult members and help decide which bills in the New Jersey Legislature the League will support. On the Youth Committee I attend monthly meetings and attended the in-person Youth Convening. I have represented the League at the NJ Institute for Social Justice Youth Power Summit and co-hosted a voter information table at Camp Voterville, a community civic engagement event.</p>
 
     <h3>NJ Youth Voices Project, co-founder</h3>
     <p class="when">Started August 2026, with guidance from the League of Women Voters of New Jersey</p>
-    <p>A friend and I launched an exploratory statewide survey of civic attitudes among people ages 16 to 25. Four college partners and the NJ Youth Corps helped share it, and it has more than 138 responses from 14 of New Jersey’s 21 counties. We plan to publish a report of the findings with recommendations.</p>
+    <p>Everyone has a theory about why young people do not vote. A friend and I wanted data from New Jersey itself, so, with guidance from the League, we launched an exploratory statewide survey of civic attitudes among people ages 16 to 25. Four college partners and the NJ Youth Corps helped share it, and it has more than 138 responses from 14 of New Jersey’s 21 counties. We are now writing a report of the findings with recommendations, to be shared through the League network and partner organizations.</p>
 
     <h3>Harrington Park Borough Hall, student volunteer</h3>
     <p class="when">July 14 to August 5, 2026; approved by the Mayor and Council in <a href="records/harrington-park-resolution-2026-139.pdf">Resolution 2026-139</a></p>
-    <p>I asked the mayor about summer internships, and the mayor connected me to the Municipal Clerk. I organized and filed municipal records and tracked how long each type of record must be kept. I am also a member of the Harrington Park Youth Council.</p>
+    <div class="side narrow">
+      <div>
+    <p>I asked the mayor of my town whether a student could work in Borough Hall for the summer, and the mayor connected me to the Municipal Clerk. For four weeks I organized and filed hundreds of pages of municipal records and tracked how long each type of record must be kept under state retention rules. I am also a member of the Harrington Park Youth Council, and I have attended four Mayor and Council meetings and one Library Board meeting as a student participant.</p>
+      </div>
+      <figure>
+        <a href="records/harrington-park-resolution-2026-139.pdf"><img class="photo" src="images/harrington-park-resolution-2026-139.jpg" alt="Borough of Harrington Park Resolution 2026-139 authorizing Ellie Kim to volunteer at Borough Hall" loading="lazy"></a>
+        <figcaption>Resolution 2026-139, adopted by the Mayor and Council.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Democracy Summer</h3>
+    <p class="when">Summer after grade 10; seven weeks; selected through a nationwide application</p>
+    <p>Democracy Summer was my first look at politics as a profession. I attended weekly national workshops with more than 20 guest speakers, including members of Congress, professors, and organizers, and in the weekly New Jersey sessions I helped build organizing strategies for state legislative districts. It is where I became more interested in how people come to take part in politics than in any single campaign.</p>
   </section>
 
   <section id="writing">
     <h2>Writing</h2>
-    <p class="lead">Research on who was included in early American ideas of rights, an essay on politics, and a book series for young readers.</p>
+    <p class="lead">A research paper on who was left out of early American ideas of rights, an internationally recognized essay in politics, and a picture book series that teaches children what debate taught me.</p>
 
     <h3>John Locke Institute Global Essay Prize, Very High Commendation</h3>
     <p class="when">2026; Politics category; awarded October 3, 2026, at Grosvenor House, London</p>
-    <p>My essay in the Politics category received a Very High Commendation in an international competition that draws tens of thousands of entries each year.</p>
+    <p>The John Locke Institute Global Essay Prize is an international competition judged by Oxford and other university academics; it draws tens of thousands of entries each year across seven subject categories. Essays are limited to 2,000 words and answer one of the Institute’s set questions. My essay in the Politics category received a Very High Commendation, a distinction given to a small share of entries above the ordinary commendation level. I had never written for an academic audience outside school before, and the essay forced me to do what debate rarely allows: hold one position for 2,000 words and defend it against the strongest objection I could find.</p>
 
     <h3>“Rights for Whom? A Comparison Between Early America and First-Wave Feminism”</h3>
     <p class="when">Published in the <a href="https://www.curieuxreview.com/2026-selected-issues">Curieux Academic Review</a>, Humanities and Social Sciences, 2026 Issue Part 1</p>
-    <p>My paper begins on page 71 of the <a href="https://www.curieuxreview.com/_files/ugd/60ed3c_99b0e0cb5c504940ac7ddff77f8aa5e9.pdf">issue</a>.</p>
+    <p>This paper asks who was actually included when the founding generation wrote about natural rights, and compares the answer to how first-wave feminists, decades later, used the same language of rights to argue for people the founders had left out. I wrote it because the same question comes up in nearly every Lincoln-Douglas round about justice: a principle sounds universal until you ask who gets to claim it. My paper begins on page 71 of the <a href="https://www.curieuxreview.com/_files/ugd/60ed3c_99b0e0cb5c504940ac7ddff77f8aa5e9.pdf">issue</a>.</p>
 
     <h3><em>The Other Side</em>, a picture book series</h3>
     <p class="when">2026; seven books, illustrated by Cara Ko</p>
-    <p>I turned the beginner lessons from my library program into a series of picture books. Each book teaches elementary school readers to listen to a different point of view and to change their minds when they learn something new.</p>
-    <p>On Amazon: <a href="https://a.co/d/08vH377O">Book 1</a>, <a href="https://a.co/d/06LGuINt">Book 2</a>, <a href="https://a.co/d/07xS8hRt">Book 3</a>, <a href="https://a.co/d/076fmKp7">Book 4</a></p>
+    <p>After three summers of teaching beginners at the library, I noticed that the hardest thing to teach was not speaking; it was listening to a view you do not share without deciding in advance that it is wrong. So I turned the beginner lessons from my library program into a series of seven picture books for elementary school readers. In each book a character runs into someone who sees the same situation differently, hears them out, and changes their mind when they learn something new. The series is illustrated by Cara Ko, a fellow high school student, and four of the books are now on Amazon. I plan to donate copies to the partner libraries and to hold read-aloud sessions.</p>
+    <p>Four of the seven books are published on Amazon; the remaining three are illustrated and in production.</p>
+    <ul class="covers">
+      <li><figure><a href="https://a.co/d/08vH377O" target="_blank" rel="noopener"><img src="images/other-side-lunchroom.jpg" alt="Cover of The Other Side of the Lunchroom, written by Ellie Kim and illustrated by Cara Ko" loading="lazy"></a><figcaption><em>The Other Side of the Lunchroom</em><br><a href="https://a.co/d/08vH377O" target="_blank" rel="noopener">On Amazon</a></figcaption></figure></li>
+      <li><figure><a href="https://a.co/d/06LGuINt" target="_blank" rel="noopener"><img src="images/other-side-fair.jpg" alt="Cover of The Other Side of Fair, written by Ellie Kim and illustrated by Cara Ko" loading="lazy"></a><figcaption><em>The Other Side of Fair</em><br><a href="https://a.co/d/06LGuINt" target="_blank" rel="noopener">On Amazon</a></figcaption></figure></li>
+      <li><figure><a href="https://a.co/d/07xS8hRt" target="_blank" rel="noopener"><img src="images/other-side-story.jpg" alt="Cover of The Other Side of the Story, written by Ellie Kim and illustrated by Cara Ko" loading="lazy"></a><figcaption><em>The Other Side of the Story</em><br><a href="https://a.co/d/07xS8hRt" target="_blank" rel="noopener">On Amazon</a></figcaption></figure></li>
+      <li><figure><a href="https://a.co/d/076fmKp7" target="_blank" rel="noopener"><img src="images/other-side-winning.jpg" alt="Cover of The Other Side of Winning, written by Ellie Kim and illustrated by Cara Ko" loading="lazy"></a><figcaption><em>The Other Side of Winning</em><br><a href="https://a.co/d/076fmKp7" target="_blank" rel="noopener">On Amazon</a></figcaption></figure></li>
+      <li><figure><img src="images/other-side-divide.jpg" alt="Cover of The Other Side of the Divide, written by Ellie Kim and illustrated by Cara Ko" loading="lazy"><figcaption><em>The Other Side of the Divide</em><br>Coming soon</figcaption></figure></li>
+      <li><figure><img src="images/other-side-being-wrong.jpg" alt="Cover of The Other Side of Being Wrong, written by Ellie Kim and illustrated by Cara Ko" loading="lazy"><figcaption><em>The Other Side of Being Wrong</em><br>Coming soon</figcaption></figure></li>
+      <li><figure><img src="images/other-side-silence.jpg" alt="Cover of The Other Side of Silence, written by Ellie Kim and illustrated by Cara Ko" loading="lazy"><figcaption><em>The Other Side of Silence</em><br>Coming soon</figcaption></figure></li>
+    </ul>
   </section>
 
   <section id="leadership">
     <h2>Leadership</h2>
-    <p class="lead">Officer roles in school clubs and work with student-run organizations outside school.</p>
+    <p class="lead">Officer roles in school clubs and work with student-run organizations outside school. In each one I was chosen by an advisor or by the members, and in each one I tried to leave a system that would work after I graduated.</p>
 
     <h3>DECA, Co-President</h3>
     <p class="when">Vice President of Training and Development in grade 11; Co-President in grade 12</p>
     <div class="side">
       <div>
-        <p>As Vice President I made a practice calendar for our 99-member chapter, started daily lunchtime practice sessions led by officers, and ran a “How to Roleplay” session. Our state conference qualifiers rose from 16 in 2025 to 32 in 2026. Now, as Co-President, I set the weekly agendas and assign the work for competitions, service events, and fundraisers.</p>
-        <p>I compete in Business Services Marketing. In 2025 I was an international finalist at the DECA International Career Development Conference, and in 2026 I placed second overall in New Jersey.</p>
+        <p>DECA is a business and marketing competition in which students present solutions to a judge playing a client. The advisor selected me for both officer roles through an application and interview. When I became Vice President of Training and Development, our 99-member chapter had no regular practice. I built a practice calendar, started daily lunchtime practice sessions led by officers, compiled a bank of practice questions, and ran a “How to Roleplay” session for new members. The next spring the number of state conference qualifiers rose from 16 to 32. Now, as Co-President, I set the weekly agendas and assign the work for competitions, service events, and fundraisers.</p>
+        <p>I compete in Business Services Marketing. In 2025 I placed 5th overall in New Jersey and was an international finalist at the DECA International Career Development Conference, and in 2026 I placed second overall in New Jersey with two Top 10 Roleplay awards.</p>
       </div>
-      <figure>
-        <img class="photo" src="images/deca-nj-state-2026-roleplay.jpg" alt="Ellie holding two awards in front of a New Jersey DECA backdrop">
-        <figcaption>New Jersey DECA State Conference, 2026.</figcaption>
-      </figure>
+      <div class="stack">
+        <figure>
+          <img class="photo" src="images/deca-nj-state-2026-roleplay.jpg" alt="Ellie holding two awards in front of a New Jersey DECA backdrop">
+          <figcaption>New Jersey DECA State Conference, 2026.</figcaption>
+        </figure>
+        <figure>
+          <img class="photo" src="images/deca-icdc-2026-atlanta.jpg" alt="Opening session of the DECA International Career Development Conference in Atlanta, 2026" loading="lazy">
+          <figcaption>DECA ICDC opening session, Atlanta, 2026.</figcaption>
+        </figure>
+      </div>
     </div>
 
     <h3>Model UN, Vice President and Senior Representative</h3>
     <p class="when">Grades 9 to 12; officer in grades 11 and 12</p>
-    <p>In a club of more than 130 members, I help lead meetings and mentor members on procedure, position papers, and public speaking.</p>
+    <p>The student presidents selected me as an officer through an application. In a club of more than 130 members, I help lead meetings and mentor newer members on procedure, position papers, and public speaking. I was named Outstanding Delegate at the Applied Tech High School MUN Conference in 2025.</p>
 
     <h3>VOY (Voices of the Young), Director of Policy and Digital Strategy</h3>
     <p class="when">2025 to present</p>
-    <p>I helped develop <a href="https://mo-soop.glide.page">Mo Soop</a>, an anonymous peer support app for teens, and <a href="https://mo-ri.glide.page">Mo Ri</a>, an app for students with ADHD. I research youth wellbeing issues to guide the apps’ content and oversee outreach campaigns.</p>
+    <p>VOY is a student-run organization that builds tools for teen wellbeing. I helped develop <a href="https://mo-soop.glide.page">Mo Soop</a>, an anonymous peer support app for teens, and <a href="https://mo-ri.glide.page">Mo Ri</a>, an app for students with ADHD. My job is the research behind the apps: I study youth wellbeing issues to guide what the apps say and how they say it, and I oversee the outreach campaigns that bring students to them.</p>
     <div class="cta">
       <a class="btn" href="https://mo-soop.glide.page" target="_blank" rel="noopener">Open Mo Soop</a>
       <a class="btn ghost" href="https://mo-ri.glide.page" target="_blank" rel="noopener">Open Mo Ri</a>
@@ -292,11 +358,12 @@
 
     <h3>Other commitments</h3>
     <ul>
-      <li>CDHW (Clothing Donations to Help Kids in the World), Operations Director since grade 9: I run the logistics for clothing drives that serve pediatric patients in New Jersey hospitals, and I led an effort to extend the service to foster care facilities.</li>
-      <li>LiNK North Jersey Rescue Team, Director of Advocacy and Fundraising since grade 9.</li>
-      <li>Technology Student Association, President in grade 11.</li>
-      <li>Peer Mentor for incoming freshmen, grades 10 to 12.</li>
-      <li>Chodae Community Church, every Sunday since grade 9: I help teach first and second graders and play flute in the Sanctus Orchestra.</li>
+      <li>CDHW (Clothing Donations to Help Kids in the World), Operations Director since grade 9: I run the logistics for clothing drives that serve pediatric patients in New Jersey hospitals, including a standardized sizing system I developed, package preparation, and hospital deliveries, and I led an effort to extend the service to foster care facilities.</li>
+      <li>LiNK (Liberty in North Korea) North Jersey Rescue Team, Director of Advocacy and Fundraising since grade 9: I lead fundraising campaigns for refugee rescue operations and run outreach that teaches peers and families about North Korean human rights.</li>
+      <li>Technology Student Association, President in grade 11, elected by the members: I tracked the chapter’s nine team projects for the state conference and managed the dues that fund the trip. I compete in Extemporaneous Speech and placed 5th at the 2025 National TSA Conference.</li>
+      <li>Peer Mentor, grades 10 to 12: I lead orientation for my own group of seven or more freshmen each year and run monthly seminars on study skills, time management, and adjusting to high school. I also teach three mental-health and mindset lessons a year to sixth graders through Heroes and Cool Kids.</li>
+      <li>Walk Alongside, Program Coordinator and Lead Instructor, summers 2025 and 2026: I designed monthly reading, writing, and literacy curricula for underserved elementary students and gave weekly individual instruction.</li>
+      <li>Chodae Community Church, every Sunday since grade 9, my longest continuous commitment: I help teach first and second graders, lead parts of Sunday worship for the high school ministry, and play flute in the Sanctus Orchestra.</li>
     </ul>
   </section>
 
@@ -319,18 +386,18 @@
       <li><figure><img src="images/american-legion-certificate.jpg" alt="American Legion certificate for 1st place in the Bergen County Oratorical Contest, awarded to Ellie Kim" loading="lazy"><figcaption>American Legion, Bergen County</figcaption></figure></li>
       <li><figure><img src="images/deca-icdc-2025-finalist.jpg" alt="DECA international finalist medals and competitor badge from Orlando, 2025" loading="lazy"><figcaption>DECA international finalist</figcaption></figure></li>
       <li><figure><img src="images/deca-nj-state-2026.jpg" alt="New Jersey DECA trophies for 2nd place overall and Role Play awards, 2026" loading="lazy"><figcaption>NJ DECA, 2nd overall</figcaption></figure></li>
+      <li><figure><img src="images/deca-awards-2025-2026.jpg" alt="DECA plaques and medals from the 2025 and 2026 seasons" loading="lazy"><figcaption>DECA awards, 2025 and 2026</figcaption></figure></li>
       <li><figure><img src="images/tsa-nj-state-2024-2025.jpg" alt="Two NJ TSA trophies for 2nd place in Extemporaneous Speech, 2024 and 2025" loading="lazy"><figcaption>NJ TSA Extemporaneous Speech</figcaption></figure></li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <!-- Replace the email address below with Ellie's real address before publishing. -->
     <dl class="kv">
-      <dt>Email</dt><dd><a href="mailto:ellie.kim@example.com">ellie.kim@example.com</a></dd>
+      <dt>Email</dt><dd><a href="mailto:elliekim345@gmail.com">elliekim345@gmail.com</a></dd>
       <dt>Location</dt><dd>Bergen County, New Jersey</dd>
       <dt>Voter guide</dt><dd><a href="records/before-you-vote.pdf"><em>Before You Vote</em> (PDF)</a></dd>
-      <dt>The Other Side</dt><dd><a href="https://a.co/d/08vH377O">Book 1 on Amazon</a></dd>
+      <dt>The Other Side</dt><dd><a href="https://a.co/d/08vH377O" target="_blank" rel="noopener"><em>The Other Side of the Lunchroom</em> on Amazon</a></dd>
       <dt>Mo Soop</dt><dd><a href="https://mo-soop.glide.page">mo-soop.glide.page</a></dd>
       <dt>Mo Ri</dt><dd><a href="https://mo-ri.glide.page">mo-ri.glide.page</a></dd>
       <dt>Youth Assembly</dt><dd><a href="https://bcyouthassembly.org">bcyouthassembly.org</a></dd>
